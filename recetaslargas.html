@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Largas</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="button.js"></script>
+    <script src="https://kit.fontawesome.com/4066c073b8.js" crossorigin="anonymous"></script>
+    <style>
+        #scroll{display:flex;
+        flex-direction: row;
+        width: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <picture class="fondo">
+        <!-- imagenes grandes -->
+        <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./fondo-grande.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./fondo-grande.jpg" type="image/jpg">
+        <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./fondo-grande.avif" type="image/avif">
+        <source media="(orientation: portrait) and (min-width:601px)" srcset="./vertical-grande.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width:601px)" srcset="./vertical-grande.jpeg" type="image/jpeg">
+        <source media="(orientation: portrait) and (min-width:601px)" srcset="./vertical-grande.avif" type="image/avif">
+
+        <!-- imágenes MEDIANAS -->
+
+        <source media="(orientation: landscape) and (min-width: 901px)" srcset="./fondo-mediano.avif" type="image/avif">
+        <source media="(orientation: landscape) and (min-width: 901px)" srcset="./fondo-mediano.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 901px)" srcset="./fondo-mediano.jpg" type="image/jpg">
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./vertical-mediano.avif"
+            type="image/avif">
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./vertical-mediano.webp"
+            type="image/webp">
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./vertical-mediano.jpeg"
+            type="image/jpeg">
+
+        <!-- imágenes PEQUEÑAS -->
+
+
+        <source media="(orientation: landscape) and (max-width: 900px)" srcset="./fondo-pequeño.avif" type="image/avif">
+        <source media="(orientation: landscape) and (max-width: 900px)" srcset="./fondo-pequeño.webp" type="image/webp">
+        <source media="(orientation: landscape) and (max-width: 900px)" srcset="./fondo-pequeño.jpeg" type="image/jpeg">
+        <source media="(orientation: portrait) and (max-width: 400px)" srcset="./vertical-pequeño.avif"
+            type="image/avif">
+        <source media="(orientation: portrait) and (max-width: 400px)" srcset="./vertical-pequeño.webp"
+            type="image/webp">
+        <source media="(orientation: portrait) and (max-width: 400px)" srcset="./vertical-pequeño.jpeg"
+            type="image/jpeg">
+
+
+        <img class="laFoto" alt="Foto de fondo" title="fondoooo" src="./fondo.jpg" />
+    </picture>
+    <header class="Header">
+        <div class="menu-arriba">
+            <div class="container">
+                <div class="logo">
+                    <a href="perfil.html"><img class="cocinero" src="logo.jpg" alt="logo"></a>
+                </div>
+                <div class="tipos-de-recetas">
+                    <div class="caja"><a href="index.html">Recetas Cortas</a></div>
+                    <div class="caja"><a href="recetaslargas.html">Recetas Largas</a></div>
+                </div>
+            </div>
+            <div class="selector">
+
+            </div>
+        </div>
+    </header>
+    <div class="contenedor">
+        <div class="cajita">
+            <div class="titulo">lasaña</div>
+            <div class="contenido" class="esconder">
+                <div class="imagencontenida"><a href="#textocontenido"><img src="macarrones con tomate.webp"
+                            alt="macas"></a> </div>
+                <div id="textocontenido" class="esconder">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore, cum ipsa,
+                    asperiores delectus incidunt soluta re Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias fugiat esse quaerat amet repellendus aperiam quia nostrum illum! Quisquam ipsum libero eum
+                    doloremque neque quam officia reiciendis eaque dolore quae.
+                </div>
+            </div>
+        </div>
+        <div class="cajita">
+            <div class="titulo">croquetas</div>
+            <div class="contenido" class="esconder">
+                <div class="imagencontenida"><a href="#textocontenido2"><img src="macarrones con tomate.webp"
+                            alt="macas"></a> </div>
+                <div id="textocontenido2" class="esconder">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore, cum ipsa,
+                    asperiores delectus incidunt soluta re
+                    123123
+                </div>
+            </div>
+        </div>
+        <div class="cajita">
+            <div class="titulo">curry con arroz</div>
+            <div class="contenido" class="esconder">
+                <div class="imagencontenida"><a href="#textocontenido3"><img src="macarrones con tomate.webp"
+                            alt="macas"></a> </div>
+                <div id="textocontenido3" class="esconder">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore, cum ipsa,
+                    asperiores delectus incidunt soluta re
+                    12312321
+                </div>
+            </div>
+        </div>
+        <div class="cajita">
+            <div class="titulo">paella</div>
+            <div class="contenido" class="esconder">
+                <div class="imagencontenida"><a href="#textocontenido4"><img src="macarrones con tomate.webp"
+                            alt="macas"></a> </div>
+                <div id="textocontenido4" class="esconder">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore, cum ipsa,
+                    asperiores delectus incidunt soluta re
+                    123123
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a class="roundedFixedBtn" class="fixedButton" id="inicio" href="index.html"><i class="fa-solid fa-house"></i>
+        </a>
+        <a class="fixedButton">
+            <div id="Button" onclick="topFunction()" class="roundedFixedBtn"><i class="fa-solid fa-up-long"></i></div>
+        </a>
+
+    </footer>
+
+</body>
+
+</html>
