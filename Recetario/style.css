@@ -1,0 +1,245 @@
+*{
+    font-family:'Raleway','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, fantasy;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+.fondo{
+    z-index: -1;
+    position: fixed;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+
+}
+
+@media screen and (orientation:landscape) {
+    .fondo {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .fondo {
+        max-width: 800px;
+        max-height: 1200px;
+    }
+}
+
+
+.header{
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(148, 50, 50);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-image: url(pizza.jpg);
+    width: 100%;
+    margin-top: -0.46%;
+    justify-content: center;
+    position: sticky;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+.cocinero{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+
+    align-self: center;
+}
+.cocinero:hover{
+    opacity: 0;
+}
+.logo{
+ background-image: url(logo.jpg);
+background-size:100%; 
+width: 10%;
+height: 30%;
+cursor: pointer;
+border-radius: 52%;
+border: solid;
+
+}
+ .logo:hover{
+    background-image: url(logo.gif);
+
+   
+} 
+.tipos-de-recetas{
+    display: inline-flex;
+    text-align: center;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+
+}
+.caja{
+    background-image: linear-gradient(45deg, rgb(173, 216, 230), rgb(128, 128, 128));
+    border-style:solid;
+    display:inline;
+    height:fit-content;
+    margin: 1%;
+    border:ridge
+    
+    
+}
+
+.caja:hover{
+    background-color: rgba(0, 255, 255, 0.39);
+    font-style: italic;
+    font-size: 2;
+}
+
+
+
+
+.fixedButton{
+
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+}
+.roundedFixedBtn{
+    height: 8vh;
+    line-height: 8vh;
+    width: 8vh;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #606360;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+  .roundedFixedBtn:hover{
+    background-color: #00ff00;
+  }
+#button{
+
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenido{
+    display: flex;
+    text-align: left;
+    overflow: hidden;
+ 
+}
+
+.cajita{
+    padding: 10%;
+
+}
+/* .cajita:hover.textocontenido{
+    opacity: 1;
+} */
+.imagencontenida{
+    height: 42vh;
+    width: 42vh;
+}
+#textocontenido{
+    display: none;
+
+    border: solid;
+    border-radius: 0.5em;
+    background-color: #d3d3d3e7;
+    text-align: left;
+    flex-wrap: wrap;
+   /* visibility: collapse; */
+   order: 1;
+}
+#textocontenido2{
+    display: none;
+
+    border: solid;
+    border-radius: 0.5em;
+    background-color: #d3d3d3e7;
+    text-align: left;
+    flex-wrap: wrap;
+   /* visibility: collapse; */
+   order: 2;
+}
+#textocontenido3{
+    display: none;
+
+    border: solid;
+    border-radius: 0.5em;
+    background-color: #d3d3d3e7;
+    text-align: left;
+    flex-wrap: wrap;
+   /* visibility: collapse; */
+   order: 3;
+}
+#textocontenido4{
+    display: none;
+
+    border: solid;
+    border-radius: 0.5em;
+    background-color: #d3d3d3e7;
+    text-align: left;
+    flex-wrap: wrap;
+   /* visibility: collapse; */
+   order: 4;
+}
+.titulo{
+    color: rgb(71, 69, 206);
+    background-color: rgba(127, 255, 212, 0.705);
+    width: 10vw;
+}
+
+#textocontenido:target {
+   display: block;
+
+
+   
+}
+#textocontenido2:target {
+    display: block;
+    
+ }
+ #textocontenido3:target {
+    display: block;
+    
+ }
+ #textocontenido4:target {
+    display: block;
+   
+ }
+img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover; 
+}
+#inicio{
+    background-color: aqua;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 1px;
+    border-radius: 20px;
+    
+}
